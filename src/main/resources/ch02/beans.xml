@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="beanA" name="beanA bean_a BEAN_A bean_A"
+          class="com.muhammedtopgul.ch02.beanFactory.domain.BeanA">
+        <property name="beanB" ref="beanB"/>
+    </bean>
+
+    <alias name="beanA" alias="a"/>
+    <alias name="beanA" alias="aa"/>
+
+    <bean id="beanB" name="beanB" class="com.muhammedtopgul.ch02.beanFactory.domain.BeanB">
+        <property name="beanC" ref="beanC"/>
+    </bean>
+
+    <bean id="beanC" name="beanC" class="com.muhammedtopgul.ch02.beanFactory.domain.BeanC"/>
+
+    <bean id="beanD" name="beanD" class="com.muhammedtopgul.ch02.beanFactory.domain.BeanD">
+        <property name="beanC" ref="beanC"/>
+    </bean>
+
+    <bean id="beanE" name="beanE" class="com.muhammedtopgul.ch02.beanFactory.domain.BeanE">
+        <property name="beanD" ref="beanD"/>
+    </bean>
+</beans>
