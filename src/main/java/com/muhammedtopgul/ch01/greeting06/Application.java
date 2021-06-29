@@ -13,7 +13,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        BeanFactory factory = new ClassPathXmlApplicationContext("com/muhammedtopgul/ch01/greeting06/resources/beans.xml");
+        BeanFactory factory = new ClassPathXmlApplicationContext("beans.xml");
 
         GreetingRenderer renderer = (GreetingRenderer) factory.getBean("renderer");
         renderer.render();
