@@ -1,4 +1,4 @@
-package com.muhammedtopgul.ch03.primary.app;
+package com.muhammedtopgul.ch03.qualifier.app;
 
 /*
  * created by Muhammed Topgul
@@ -6,7 +6,7 @@ package com.muhammedtopgul.ch03.primary.app;
  * at 16:54
  */
 
-import com.muhammedtopgul.ch03.primary.renderer.OutputRenderer;
+import com.muhammedtopgul.ch03.qualifier.renderer.OutputRenderer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -14,7 +14,6 @@ public class Application {
 
     public static void main(String[] args) {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("ch03/beans.xml");
-        ;
 
         OutputRenderer outputRenderer = (OutputRenderer) applicationContext.getBean("errorOutputRenderer");
         outputRenderer.render();

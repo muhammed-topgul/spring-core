@@ -1,4 +1,4 @@
-package com.muhammedtopgul.ch03.primary.renderer;
+package com.muhammedtopgul.ch03.qualifier.renderer;
 
 /*
  * created by Muhammed Topgul
@@ -6,7 +6,7 @@ package com.muhammedtopgul.ch03.primary.renderer;
  * at 16:57
  */
 
-import com.muhammedtopgul.ch03.primary.provider.GreetingProvider;
+import com.muhammedtopgul.ch03.qualifier.provider.GreetingProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;

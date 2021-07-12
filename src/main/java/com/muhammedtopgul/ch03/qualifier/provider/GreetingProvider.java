@@ -1,4 +1,4 @@
-package com.muhammedtopgul.ch03.primary.provider;
+package com.muhammedtopgul.ch03.qualifier.provider;
 
 /*
  * created by Muhammed Topgul

@@ -1,4 +1,4 @@
-package com.muhammedtopgul.ch03.primary.renderer;
+package com.muhammedtopgul.ch03.qualifier.renderer;
 
 /*
  * created by Muhammed Topgul
