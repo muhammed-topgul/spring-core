@@ -23,7 +23,7 @@ public class GreetingFactory implements Factory {
     {
         Properties properties = new Properties();
         try {
-            properties.load(new FileInputStream("C:\\Users\\muhammed.topgul\\IdeaProjects\\akin-kaldiroglu\\spring-core\\src\\main\\java\\com\\muhammedtopgul\\ch01\\greeting03\\resources\\application.properties"));
+            properties.load(new FileInputStream("C:\\Users\\muhammed.topgul\\spring-core\\src\\main\\java\\com\\muhammedtopgul\\ch01\\greeting03\\resources\\application.properties"));
 
             String rendererClass = properties.getProperty("renderer.class");
             String providerClass = properties.getProperty("provider.class");
