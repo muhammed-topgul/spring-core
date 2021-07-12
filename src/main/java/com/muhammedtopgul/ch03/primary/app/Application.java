@@ -13,9 +13,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Application {
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("ch03/beans.xml");;
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("ch03/beans.xml");
+        ;
 
         OutputRenderer outputRenderer = (OutputRenderer) applicationContext.getBean("errorOutputRenderer");
+        outputRenderer.render();
+
+        outputRenderer = (OutputRenderer) applicationContext.getBean("standardOutputRenderer");
         outputRenderer.render();
     }
 }

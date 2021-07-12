@@ -8,20 +8,21 @@ package com.muhammedtopgul.ch03.primary.renderer;
 
 import com.muhammedtopgul.ch03.primary.provider.GreetingProvider;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ErrorOutputRenderer implements OutputRenderer {
 
-    GreetingProvider engGreetingProvider;
+    GreetingProvider greetingProvider;
 
     @Autowired
-    public void setHelloWorldGreetingProvider(GreetingProvider engGreetingProvider) {
-        this.engGreetingProvider = engGreetingProvider;
+    public void setHelloWorldGreetingProvider(@Qualifier("tr") GreetingProvider greetingProvider) {
+        this.greetingProvider = greetingProvider;
     }
 
     @Override
     public void render() {
-        System.out.println(engGreetingProvider.greeting());
+        System.out.println(greetingProvider.greeting());
     }
 }

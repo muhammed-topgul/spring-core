@@ -8,7 +8,7 @@ package com.muhammedtopgul.ch03.primary.provider;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component(value = "tr")
 public class TrGreetingProvider implements GreetingProvider {
 
     @Override
